@@ -1,0 +1,5 @@
+#!/bin/bash
+# Audits current firewall rules and saves them to a file.
+
+sudo iptables -L -v -n > firewall_audit_$(date +%Y%m%d).txt
+echo "Firewall rules saved to firewall_audit_$(date +%Y%m%d).txt"

@@ -1,0 +1,5 @@
+#!/bin/bash
+# Generates a disk usage report for all mounted filesystems.
+
+df -h > disk_usage_report.txt
+echo "Disk usage report saved to disk_usage_report.txt"

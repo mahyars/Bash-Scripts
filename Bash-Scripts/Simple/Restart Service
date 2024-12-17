@@ -1,0 +1,5 @@
+#!/bin/bash
+# Restarts a systemd service.
+
+SERVICE="nginx"
+sudo systemctl restart "$SERVICE"

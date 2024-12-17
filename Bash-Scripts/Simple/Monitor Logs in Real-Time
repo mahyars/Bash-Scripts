@@ -1,0 +1,4 @@
+#!/bin/bash
+# Monitors a log file in real-time.
+
+tail -f /var/log/syslog

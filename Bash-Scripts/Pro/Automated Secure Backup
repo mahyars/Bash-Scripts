@@ -1,0 +1,5 @@
+#!/bin/bash
+# Encrypts and backs up sensitive data.
+
+tar -czf - /path/to/data | openssl enc -aes-256-cbc -e -out backup_$(date +%Y%m%d).tar.gz
+echo "Backup created and encrypted."

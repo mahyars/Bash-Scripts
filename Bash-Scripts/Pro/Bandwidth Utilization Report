@@ -1,0 +1,5 @@
+#!/bin/bash
+# Monitors bandwidth usage on an interface.
+
+INTERFACE="eth0"
+sudo iftop -i "$INTERFACE"

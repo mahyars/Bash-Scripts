@@ -1,0 +1,8 @@
+#!/bin/bash
+# Monitors latency to a remote server and logs results.
+
+HOST="8.8.8.8"
+LOG_FILE="latency_log.txt"
+
+ping -c 5 "$HOST" | awk '/time=/{print $7}' >> "$LOG_FILE"
+echo "Latency results saved to $LOG_FILE"

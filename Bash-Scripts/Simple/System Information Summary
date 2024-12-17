@@ -1,0 +1,5 @@
+#!/bin/bash
+# Outputs system information to a file.
+
+echo "System Info" > system_info.txt
+uname -a >> system_info.txt

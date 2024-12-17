@@ -1,0 +1,4 @@
+#!/bin/bash
+# Displays current memory usage.
+
+free -h

@@ -1,0 +1,5 @@
+#!/bin/bash
+# Checks if a process is running.
+
+PROCESS="nginx"
+pgrep "$PROCESS" && echo "$PROCESS is running" || echo "$PROCESS is not running"

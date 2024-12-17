@@ -1,0 +1,4 @@
+#!/bin/bash
+# Finds files larger than 1GB in a directory.
+
+find /path/to/directory -type f -size +1G

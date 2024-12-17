@@ -1,0 +1,4 @@
+#!/bin/bash
+# Securely transfers files to a remote server.
+
+scp /path/to/file user@remote:/path/to/destination

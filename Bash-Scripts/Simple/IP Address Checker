@@ -1,0 +1,4 @@
+#!/bin/bash
+# Prints the system's IP address.
+
+hostname -I

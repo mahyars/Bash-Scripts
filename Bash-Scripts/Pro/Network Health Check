@@ -1,0 +1,12 @@
+#!/bin/bash
+# Checks the status of essential network services.
+
+SERVICES=("nginx" "mysql" "ssh")
+
+for SERVICE in "${SERVICES[@]}"; do
+    if systemctl is-active --quiet "$SERVICE"; then
+        echo "$SERVICE is running."
+    else
+        echo "$SERVICE is down. Investigate immediately."
+    fi
+done

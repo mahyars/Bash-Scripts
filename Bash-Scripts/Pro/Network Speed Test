@@ -1,0 +1,5 @@
+#!/bin/bash
+# Runs a speed test and logs results.
+
+speedtest-cli > speedtest_results.txt
+echo "Speed test completed. Results saved to speedtest_results.txt"

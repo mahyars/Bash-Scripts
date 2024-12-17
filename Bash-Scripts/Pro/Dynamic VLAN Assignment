@@ -1,0 +1,9 @@
+#!/bin/bash
+# Assigns VLANs dynamically to interfaces based on input.
+
+INTERFACE="$1"
+VLAN_ID="$2"
+
+sudo ip link add link "$INTERFACE" name "$INTERFACE.$VLAN_ID" type vlan id "$VLAN_ID"
+sudo ip link set dev "$INTERFACE.$VLAN_ID" up
+echo "VLAN $VLAN_ID assigned to $INTERFACE"

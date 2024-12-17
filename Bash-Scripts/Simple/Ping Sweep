@@ -1,0 +1,9 @@
+#!/bin/bash
+# Pings all IPs in a subnet.
+
+SUBNET="192.168.1"
+for i in {1..254}; do
+    ping -c 1 "$SUBNET.$i" | grep "64 bytes" &
+done
+wait
+echo "Ping sweep completed."

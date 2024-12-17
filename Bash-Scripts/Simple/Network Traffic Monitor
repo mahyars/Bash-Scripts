@@ -1,0 +1,4 @@
+#!/bin/bash
+# Monitors network traffic on all interfaces.
+
+sudo iftop -i any

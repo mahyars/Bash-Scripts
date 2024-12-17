@@ -1,0 +1,10 @@
+#!/bin/bash
+# Backs up network device configurations using SSH.
+
+SERVERS=("192.168.1.1" "192.168.1.2")
+BACKUP_DIR="/path/to/backup"
+
+for SERVER in "${SERVERS[@]}"; do
+    ssh admin@"$SERVER" "show running-config" > "$BACKUP_DIR/config_$SERVER_$(date +%Y%m%d).txt"
+done
+echo "Network configurations backed up."

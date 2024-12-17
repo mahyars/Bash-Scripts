@@ -1,0 +1,4 @@
+#!/bin/bash
+# Checks disk health using smartctl.
+
+sudo smartctl -a /dev/sda

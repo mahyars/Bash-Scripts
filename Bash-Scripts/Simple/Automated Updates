@@ -1,0 +1,4 @@
+#!/bin/bash
+# Updates all packages on a Debian-based system.
+
+sudo apt update && sudo apt upgrade -y

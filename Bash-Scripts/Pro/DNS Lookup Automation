@@ -1,0 +1,8 @@
+#!/bin/bash
+# Performs DNS lookups for a list of domains.
+
+DOMAINS=("google.com" "baesystems.com" "github.com")
+
+for DOMAIN in "${DOMAINS[@]}"; do
+    nslookup "$DOMAIN"
+done

@@ -1,0 +1,4 @@
+#!/bin/bash
+# Adds a new cron job to the crontab.
+
+echo "0 2 * * * /path/to/script.sh" | crontab -
